@@ -1,28 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:hel_bike_ui/widgets/application_details/application_details.dart';
+import 'package:hel_bike_ui/widgets/centered_view/centered_view.dart';
+import 'package:hel_bike_ui/widgets/navigation_bar/navigation_bar.dart';
+import 'package:hel_bike_ui/widgets/station_picture/station_picture.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Size screenSize = MediaQuery.of(context).size;
-
-    return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(vertical: 14.0),
-      child: Column(
-        children: [
-          SizedBox(
-            height: screenSize.height *0.7,
-            width: screenSize.width * 0.4,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(8.0),
-              child: Image.asset(
-                "assets/images/bike_station.jpg",
-                fit: BoxFit.fill,
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: CenteredView(
+        child: Column(
+          children: [
+            AppNavigationBar(),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  ApplicationDetails(),
+                  Expanded(
+                    child: Center(
+                      child: StationPicture(),
+                    ),
+                  )
+                ],
               ),
-            ),
-          ),
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
