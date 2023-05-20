@@ -23,4 +23,8 @@ abstract class ThemeText {
   static const TextStyle navItem = TextStyle(
       fontSize: 18
   );
+
+  static const TextStyle imgDescription = TextStyle(
+    fontSize: 12
+  );
 }
