@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hel_bike_ui/screens/home_screen.dart';
 import 'package:hel_bike_ui/utils/application_constants.dart';
 
-void main() {
+void main() async {
+  await dotenv.load();
+
   runApp(const MyApp());
 }
 
