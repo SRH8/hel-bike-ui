@@ -8,15 +8,15 @@ abstract class Styles {
     color: Colors.black
   );
   
-  static const TextStyle appDescription = TextStyle(
-      fontSize: 21,
+  static TextStyle appDescription(double descriptionSize) => TextStyle(
+      fontSize: descriptionSize,
       height: 1.7
   );
 
-  static const TextStyle appTitle = TextStyle(
+  static TextStyle appTitle(double titleSize) => TextStyle(
     fontWeight: FontWeight.w800,
     height: 0.9,
-    fontSize: 90,
+    fontSize: titleSize,
     color: Colors.black
   );
 
