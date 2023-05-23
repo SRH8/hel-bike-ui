@@ -28,14 +28,16 @@ abstract class Styles {
     fontSize: 12
   );
 
-  static const TextStyle startNowButton = TextStyle(
+  static const TextStyle callToAction = TextStyle(
     fontSize: 18,
     color: Colors.white,
     fontWeight: FontWeight.w800
   );
 
+  static const Color primaryColor = Color.fromARGB(255, 31, 146, 229);
+
   static BoxDecoration startNowButtonStyle = BoxDecoration(
-    color: const Color.fromARGB(255, 31, 146, 229),
+    color: primaryColor,
     borderRadius: BorderRadius.circular(5)
   );
 }

@@ -11,4 +11,8 @@ abstract class ApplicationConstants {
   static const String bikeStationImg = 'assets/images/bike_station.jpg';
 
   static const String startNowButton = 'Start now';
+
+  static const String drawerHeader = 'Helsinki Bike App';
+
+  static const String drawerDescription = 'Start exploring stations and journeys!';
 }

@@ -12,7 +12,7 @@ class StartNowButtonDesktopTablet extends StatelessWidget {
       decoration: Styles.startNowButtonStyle,
       child: Text(
         title,
-        style: Styles.startNowButton,
+        style: Styles.callToAction,
       ),
     );
   }
