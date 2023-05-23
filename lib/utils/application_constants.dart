@@ -9,4 +9,6 @@ abstract class ApplicationConstants {
   static const String appTitle = 'Helsinki Bike App';
 
   static const String bikeStationImg = 'assets/images/bike_station.jpg';
+
+  static const String startNowButton = 'Start now';
 }

@@ -27,4 +27,10 @@ abstract class ThemeText {
   static const TextStyle imgDescription = TextStyle(
     fontSize: 12
   );
+
+  static const TextStyle startNowButton = TextStyle(
+    fontSize: 18,
+    color: Colors.white,
+    fontWeight: FontWeight.w800
+  );
 }
