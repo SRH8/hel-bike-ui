@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hel_bike_ui/utils/styles.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+import 'package:hel_bike_ui/widgets/start_now_button/start_now_button_desktop_tablet.dart';
+import 'package:hel_bike_ui/widgets/start_now_button/start_now_button_mobile.dart';
 
 class StartNowButton extends StatelessWidget {
   final String title;
@@ -7,16 +9,10 @@ class StartNowButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15) ,
-      decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 31, 146, 229),
-        borderRadius: BorderRadius.circular(5)
-      ),
-      child: Text(
-        title,
-        style: ThemeText.startNowButton,
-      ),
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) =>  StartNowButtonMobile(title: title),
+      tablet: (BuildContext context) =>  StartNowButtonDesktopTablet(title: title),
+      desktop: (BuildContext context) => StartNowButtonDesktopTablet(title: title),
     );
   }
 }
