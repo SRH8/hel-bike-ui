@@ -11,7 +11,7 @@ class NavBarTitle extends StatelessWidget {
       width: 150,
       child: Text(
           'Helsinki \nBike App',
-          style: ThemeText.homeNav
+          style: Styles.homeNav
       ),
     );
   }

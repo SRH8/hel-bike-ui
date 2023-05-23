@@ -9,7 +9,7 @@ class NavigationItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
         title,
-        style: ThemeText.navItem
+        style: Styles.navItem
     );
   }
 }

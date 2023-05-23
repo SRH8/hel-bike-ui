@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class ThemeText {
+abstract class Styles {
 
   static const TextStyle homeNav = TextStyle(
     fontSize: 18,
@@ -32,5 +32,10 @@ abstract class ThemeText {
     fontSize: 18,
     color: Colors.white,
     fontWeight: FontWeight.w800
+  );
+
+  static BoxDecoration startNowButtonStyle = BoxDecoration(
+    color: const Color.fromARGB(255, 31, 146, 229),
+    borderRadius: BorderRadius.circular(5)
   );
 }

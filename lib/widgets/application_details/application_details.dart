@@ -15,12 +15,12 @@ class ApplicationDetails extends StatelessWidget {
         children: <Widget>[
           Text(
             ApplicationConstants.appTitle,
-            style: ThemeText.appTitle
+            style: Styles.appTitle
           ),
           SizedBox(height: 30),
           Text(
             ApplicationConstants.appDescription,
-            style: ThemeText.appDescription
+            style: Styles.appDescription
           )
         ],
       ),
