@@ -3,8 +3,9 @@ import 'package:hel_bike_ui/widgets/navigation_bar/navbar_item.dart';
 
 class NavigationDrawerItem extends StatelessWidget {
   final String title;
+  final String navigationPath;
   final IconData icon;
-  const NavigationDrawerItem({Key? key, required this.title, required this.icon}) : super(key: key);
+  const NavigationDrawerItem({Key? key, required this.title, required this.icon, required this.navigationPath}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class NavigationDrawerItem extends StatelessWidget {
         children: <Widget>[
           Icon(icon),
           const SizedBox(width: 30),
-          NavigationItem(title: title)
+          NavigationItem(title: title, navigationPath: navigationPath)
         ],
       ),
     );

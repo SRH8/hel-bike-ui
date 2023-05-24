@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hel_bike_ui/widgets/navigation_bar/navbar_title.dart';
+import 'package:hel_bike_ui/routing/route_names.dart';
 
 class NavigationBarMobile extends StatelessWidget {
   const NavigationBarMobile({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class NavigationBarMobile extends StatelessWidget {
               Scaffold.of(context).openDrawer();
             },
           ),
-          const NavBarTitle()
+          const NavBarTitle(navigationPath: homeRoute)
         ],
       ),
     );

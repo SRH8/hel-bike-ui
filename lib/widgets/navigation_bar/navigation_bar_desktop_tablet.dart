@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hel_bike_ui/widgets/navigation_bar/navbar_title.dart';
 import 'package:hel_bike_ui/widgets/navigation_bar/navbar_item.dart';
+import 'package:hel_bike_ui/routing/route_names.dart';
 
 class NavigationBarDesktopTablet extends StatelessWidget {
   const NavigationBarDesktopTablet({Key? key}) : super(key: key);
@@ -12,13 +13,13 @@ class NavigationBarDesktopTablet extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          NavBarTitle(),
+          NavBarTitle(navigationPath: homeRoute),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              NavigationItem(title: 'Stations'),
+              NavigationItem(title: 'Stations', navigationPath: stationListRoute),
               SizedBox(width: 60),
-              NavigationItem(title: 'Journeys')
+              NavigationItem(title: 'Journeys', navigationPath: journeyListRoute)
             ],
           )
         ],
