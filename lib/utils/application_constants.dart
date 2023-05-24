@@ -15,4 +15,6 @@ abstract class ApplicationConstants {
   static const String drawerHeader = 'Helsinki Bike App';
 
   static const String drawerDescription = 'Start exploring stations and journeys!';
+
+  static const String tableHeader = "Helsinki's and Espoo's bike stations";
 }

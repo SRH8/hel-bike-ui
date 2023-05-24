@@ -13,7 +13,8 @@ class ApplicationDetails extends StatelessWidget {
       double titleSize = sizingInformation.deviceScreenType == DeviceScreenType.desktop ? 90 : 50;
       double descriptionSize = sizingInformation.deviceScreenType == DeviceScreenType.desktop ? 21 : 16;
 
-      return SizedBox(
+      return Container(
+        padding: const EdgeInsets.only(top: 3),
         width: 600,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

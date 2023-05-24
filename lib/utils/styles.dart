@@ -40,4 +40,14 @@ abstract class Styles {
     color: primaryColor,
     borderRadius: BorderRadius.circular(5)
   );
+
+  static const TextStyle tableHeader = TextStyle(
+    fontSize: 26,
+    fontWeight: FontWeight.w800
+  );
+
+  static const TextStyle tableColumn = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w700
+  );
 }
