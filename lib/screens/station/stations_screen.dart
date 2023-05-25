@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hel_bike_ui/datasource/station/station_data_source.dart';
-import 'package:hel_bike_ui/model/station.dart';
+import 'package:hel_bike_ui/model/station/station.dart';
 import 'package:hel_bike_ui/service/station_service.dart';
 import 'package:hel_bike_ui/utils/application_constants.dart';
 import 'package:hel_bike_ui/utils/styles.dart';

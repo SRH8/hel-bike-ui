@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hel_bike_ui/model/station.dart';
+import 'package:hel_bike_ui/model/station/station.dart';
 
 class StationDataSource extends DataTableSource {
   final List<Station> stations;

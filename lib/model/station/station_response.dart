@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:hel_bike_ui/model/station.dart';
+import 'package:hel_bike_ui/model/station/station.dart';
 
 StationResponse stationResponseFromJson(String str) => StationResponse.fromJson(json.decode(utf8.decode(str.codeUnits)));
 

@@ -1,6 +1,6 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:hel_bike_ui/model/station.dart';
-import 'package:hel_bike_ui/model/station_response.dart';
+import 'package:hel_bike_ui/model/station/station.dart';
+import 'package:hel_bike_ui/model/station/station_response.dart';
 import 'package:http/http.dart' as http;
 
 class StationService {
