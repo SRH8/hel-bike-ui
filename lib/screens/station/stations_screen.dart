@@ -4,8 +4,8 @@ import 'package:hel_bike_ui/model/station/station.dart';
 import 'package:hel_bike_ui/service/station_service.dart';
 import 'package:hel_bike_ui/utils/application_constants.dart';
 import 'package:hel_bike_ui/utils/styles.dart';
-import 'package:hel_bike_ui/widgets/table_header/table_header.dart';
-
+import 'package:hel_bike_ui/widgets/data_table/custom_table.dart';
+import 'package:hel_bike_ui/widgets/data_table_header/table_header.dart';
 
 class StationsScreen extends StatefulWidget {
   const StationsScreen({Key? key}) : super(key: key);
@@ -26,13 +26,9 @@ class _StationsScreenState extends State<StationsScreen> {
       builder: (context, snapshot) {
         if(snapshot.hasData) {
           return SingleChildScrollView(
-            child: PaginatedDataTable(
-              columnSpacing: 100,
-              horizontalMargin: 60,
-              arrowHeadColor: Colors.black,
-              rowsPerPage: 10,
-              header: const TableHeader(title: ApplicationConstants.tableHeader),
-              source: StationDataSource(stations: snapshot.data as List<Station>),
+            child: CustomTable(
+              tableHeader: const TableHeader(title: ApplicationConstants.stationsTableHeader),
+              dataSource: StationDataSource(stations: snapshot.data as List<Station>),
               columns: const [
                 DataColumn(label: Text('Name', style: Styles.tableColumn)),
                 DataColumn(label: Text('Address', style: Styles.tableColumn)),
