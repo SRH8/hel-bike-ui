@@ -6,7 +6,7 @@ import 'package:hel_bike_ui/model/journey/journey.dart';
 class JourneyService {
 
   final String _baseUrl = dotenv.get('BASE_URL');
-  final int _pageSize = 2000;
+  final int _pageSize = 100;
 
   Future<List<Journey>> getJourneys() async {
     List<Journey> journeys = [];

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:hel_bike_ui/model/journey/journey.dart';
 
-JourneyResponse journeyResponseFromJson(String str) => JourneyResponse.fromJson(json.decode(str));
+JourneyResponse journeyResponseFromJson(String str) => JourneyResponse.fromJson(json.decode(utf8.decode(str.codeUnits)));
 
 class JourneyResponse {
   List<Journey> content;
