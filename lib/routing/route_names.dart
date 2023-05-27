@@ -1,3 +1,3 @@
-const String homeRoute = 'home';
-const String stationListRoute = 'stations';
-const String journeyListRoute = 'journeys';
+const String homeRoute = '/';
+const String stationListRoute = '/stations';
+const String journeyListRoute = '/journeys';

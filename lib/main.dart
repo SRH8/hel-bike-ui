@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:hel_bike_ui/routing/route_names.dart';
+import 'package:hel_bike_ui/routing/router.dart';
 import 'package:hel_bike_ui/screens/layout_template/layout_template.dart';
+import 'package:hel_bike_ui/service/navigation/navigation_service.dart';
 import 'package:hel_bike_ui/utils/application_constants.dart';
 import 'package:hel_bike_ui/utils/custom_scroll_behavior.dart';
 import 'package:hel_bike_ui/utils/locator.dart';
 
 void main() async {
   await dotenv.load();
-
   setUpLocator();
-  
+  usePathUrlStrategy();
+
   runApp(const MyApp());
 }
 
@@ -34,7 +38,11 @@ class MyApp extends StatelessWidget {
           elevation: 5
         )
       ),
-      home: const LayoutTemplate(),
+      builder: (context, child) => LayoutTemplate(child: child!),
+      navigatorKey: locator<NavigationService>().navigatorKey,
+      onGenerateRoute: generateRoute,
+      initialRoute: homeRoute,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

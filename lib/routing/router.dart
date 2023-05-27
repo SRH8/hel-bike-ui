@@ -7,16 +7,16 @@ import 'package:hel_bike_ui/screens/station/stations_screen.dart';
 Route<dynamic>? generateRoute(RouteSettings settings) {
   switch(settings.name) {
     case homeRoute:
-      return _getPageRoute(const HomeScreen());
+      return _getPageRoute(const HomeScreen(), settings);
     case stationListRoute:
-      return _getPageRoute(const StationsScreen());
+      return _getPageRoute(const StationsScreen(), settings);
     case journeyListRoute:
-      return _getPageRoute(const JourneysScreen());
+      return _getPageRoute(const JourneysScreen(), settings);
     default:
-      return null;
+      return _getPageRoute(const HomeScreen(), settings);
   }
 }
 
-PageRoute _getPageRoute(Widget child) {
-  return MaterialPageRoute(builder: (context) => child);
+PageRoute _getPageRoute(Widget child, RouteSettings settings) {
+  return MaterialPageRoute(builder: (context) => child, settings: settings);
 }
