@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'package:hel_bike_ui/datasource/journey/journey_data_source.dart';
 import 'package:hel_bike_ui/service/journey/journey_service.dart';
 import 'package:hel_bike_ui/model/journey/journey.dart';
@@ -15,7 +16,13 @@ class JourneysScreen extends StatefulWidget {
 }
 
 class _JourneysScreenState extends State<JourneysScreen> {
-  final Future<List<Journey>> _journeys = JourneyService().getJourneys();
+  late final Future<List<Journey>> _journeys;
+
+  @override
+  void initState() {
+    super.initState();
+    _journeys = JourneyService().getJourneys(http.Client());
+  }
 
   @override
   Widget build(BuildContext context) {
