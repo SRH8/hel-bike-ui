@@ -18,7 +18,8 @@ class NavBarTitle extends StatelessWidget {
         },
         child: const Text(
             'Helsinki \nBike App',
-            style: Styles.homeNav
+            style: Styles.homeNav,
+            textDirection: TextDirection.ltr,
         ),
       ),
     );

@@ -35,12 +35,12 @@ class _JourneysScreenState extends State<JourneysScreen> {
               tableHeader: const TableHeader(title: ApplicationConstants.journeysTableHeader),
               dataSource: JourneyDataSource(journeys: snapshot.data as List<Journey>),
               columns: const [
-                DataColumn(label: Text('Departure', style: Styles.tableColumn)),
-                DataColumn(label: Text('Return', style: Styles.tableColumn)),
-                DataColumn(label: Text('Departure station', style: Styles.tableColumn)),
-                DataColumn(label: Text('Return station', style: Styles.tableColumn)),
-                DataColumn(label: Text('Distance covered (km)', style: Styles.tableColumn)),
-                DataColumn(label: Text('Duration', style: Styles.tableColumn))
+                DataColumn(label: Text('Departure', style: Styles.tableColumn, textDirection: TextDirection.ltr)),
+                DataColumn(label: Text('Return', style: Styles.tableColumn, textDirection: TextDirection.ltr)),
+                DataColumn(label: Text('Departure station', style: Styles.tableColumn, textDirection: TextDirection.ltr,)),
+                DataColumn(label: Text('Return station', style: Styles.tableColumn, textDirection: TextDirection.ltr,)),
+                DataColumn(label: Text('Distance covered (km)', style: Styles.tableColumn, textDirection: TextDirection.ltr,)),
+                DataColumn(label: Text('Duration', style: Styles.tableColumn, textDirection: TextDirection.ltr,))
               ],
             )
           );

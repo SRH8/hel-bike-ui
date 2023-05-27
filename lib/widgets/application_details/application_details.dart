@@ -20,16 +20,18 @@ class ApplicationDetails extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            SelectableText(
               ApplicationConstants.appTitle,
               style: Styles.appTitle(titleSize),
               textAlign: textAlignment,
+              textDirection: TextDirection.ltr,
             ),
             const SizedBox(height: 30),
-            Text(
+            SelectableText(
               ApplicationConstants.appDescription,
               style: Styles.appDescription(descriptionSize),
               textAlign: textAlignment,
+              textDirection: TextDirection.ltr,
             )
           ],
         ),

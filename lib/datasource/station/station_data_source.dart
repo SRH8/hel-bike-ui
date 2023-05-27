@@ -9,9 +9,9 @@ class StationDataSource extends DataTableSource {
   @override
   DataRow? getRow(int index) {
     return DataRow.byIndex(index: index, cells: [
-      DataCell(Text(stations[index].nimi)),
-      DataCell(Text(stations[index].osoite)),
-      DataCell(Text('${stations[index].kapasiteet}')),
+      DataCell(Text(stations[index].nimi, textDirection: TextDirection.ltr)),
+      DataCell(Text(stations[index].osoite, textDirection: TextDirection.ltr)),
+      DataCell(Text('${stations[index].kapasiteet}', textDirection: TextDirection.ltr)),
         ]);
   }
 

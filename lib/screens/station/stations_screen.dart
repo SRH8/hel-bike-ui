@@ -35,9 +35,9 @@ class _StationsScreenState extends State<StationsScreen> {
               tableHeader: const TableHeader(title: ApplicationConstants.stationsTableHeader),
               dataSource: StationDataSource(stations: snapshot.data as List<Station>),
               columns: const [
-                DataColumn(label: Text('Name', style: Styles.tableColumn)),
-                DataColumn(label: Text('Address', style: Styles.tableColumn)),
-                DataColumn(label: Text('Capacity', style: Styles.tableColumn))
+                DataColumn(label: Text('Name', style: Styles.tableColumn, textDirection: TextDirection.ltr)),
+                DataColumn(label: Text('Address', style: Styles.tableColumn, textDirection: TextDirection.ltr)),
+                DataColumn(label: Text('Capacity', style: Styles.tableColumn, textDirection: TextDirection.ltr))
               ],
             ),
           );

@@ -17,10 +17,12 @@ class NavigationDrawerHeader extends StatelessWidget {
           Text(
             ApplicationConstants.drawerHeader,
             style: Styles.callToAction,
+            textDirection: TextDirection.ltr,
           ),
           Text(
             ApplicationConstants.drawerDescription,
             style: TextStyle(color: Colors.white),
+            textDirection: TextDirection.ltr,
           )
         ],
       ),

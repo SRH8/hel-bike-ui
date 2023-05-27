@@ -12,6 +12,7 @@ class TableHeader extends StatelessWidget {
         title,
         style: Styles.tableHeader,
         textAlign: TextAlign.center,
+        textDirection: TextDirection.ltr,
       ),
     );
   }

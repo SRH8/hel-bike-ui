@@ -16,7 +16,8 @@ class NavigationItem extends StatelessWidget {
       },
       child: Text(
           title,
-          style: Styles.navItem
+          style: Styles.navItem,
+          textDirection: TextDirection.ltr,
       ),
     );
   }

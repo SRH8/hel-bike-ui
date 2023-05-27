@@ -9,12 +9,12 @@ class JourneyDataSource extends DataTableSource {
   @override
   DataRow? getRow(int index) {
     return DataRow.byIndex(index: index, cells: [
-      DataCell(Text(Formatter.formatDateTime(journeys[index].departureDate))),
-      DataCell(Text(Formatter.formatDateTime(journeys[index].returnDate))),
-      DataCell(Text(journeys[index].departureStationName)),
-      DataCell(Text(journeys[index].returnStationName)),
-      DataCell(Text('${Formatter.metersToKms(journeys[index].distanceCoveredM)}')),
-      DataCell(Text(Formatter.secondsToHoursMinutesSeconds(journeys[index].durationS)))
+      DataCell(Text(Formatter.formatDateTime(journeys[index].departureDate), textDirection: TextDirection.ltr)),
+      DataCell(Text(Formatter.formatDateTime(journeys[index].returnDate), textDirection: TextDirection.ltr)),
+      DataCell(Text(journeys[index].departureStationName, textDirection: TextDirection.ltr)),
+      DataCell(Text(journeys[index].returnStationName, textDirection: TextDirection.ltr)),
+      DataCell(Text('${Formatter.metersToKms(journeys[index].distanceCoveredM)}', textDirection: TextDirection.ltr)),
+      DataCell(Text(Formatter.secondsToHoursMinutesSeconds(journeys[index].durationS), textDirection: TextDirection.ltr))
     ]);
   }
 
