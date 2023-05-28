@@ -19,4 +19,6 @@ abstract class ApplicationConstants {
   static const String stationsTableHeader = "Helsinki's and Espoo's bike stations";
 
   static const String journeysTableHeader = "Journeys";
+
+  static const String navigationBarTitle = 'Helsinki \nBike App';
 }

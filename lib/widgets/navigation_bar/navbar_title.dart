@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hel_bike_ui/utils/application_constants.dart';
 import 'package:hel_bike_ui/utils/styles.dart';
 import 'package:hel_bike_ui/utils/locator.dart';
 import 'package:hel_bike_ui/service/navigation/navigation_service.dart';
@@ -17,7 +18,7 @@ class NavBarTitle extends StatelessWidget {
           locator<NavigationService>().navigateTo(navigationPath);
         },
         child: const Text(
-            'Helsinki \nBike App',
+            ApplicationConstants.navigationBarTitle,
             style: Styles.homeNav,
             textDirection: TextDirection.ltr,
         ),
