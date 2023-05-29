@@ -13,14 +13,17 @@ class NavBarTitle extends StatelessWidget {
     return SizedBox(
       height: 80,
       width: 150,
-      child: GestureDetector(
-        onTap: () {
-          locator<NavigationService>().navigateTo(navigationPath);
-        },
-        child: const Text(
-            ApplicationConstants.navigationBarTitle,
-            style: Styles.homeNav,
-            textDirection: TextDirection.ltr,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: () {
+            locator<NavigationService>().navigateTo(navigationPath);
+          },
+          child: const Text(
+              ApplicationConstants.navigationBarTitle,
+              style: Styles.homeNav,
+              textDirection: TextDirection.ltr,
+          ),
         ),
       ),
     );

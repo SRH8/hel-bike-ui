@@ -10,17 +10,20 @@ class StartNowButtonMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        locator<NavigationService>().navigateTo(stationListRoute);
-      },
-      child: Container(
-        height: 60,
-        alignment: Alignment.center,
-        decoration: Styles.startNowButtonStyle,
-        child: Text(
-          title,
-          style: Styles.callToAction,
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          locator<NavigationService>().navigateTo(stationListRoute);
+        },
+        child: Container(
+          height: 60,
+          alignment: Alignment.center,
+          decoration: Styles.startNowButtonStyle,
+          child: Text(
+            title,
+            style: Styles.callToAction,
+          ),
         ),
       ),
     );

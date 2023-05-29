@@ -10,16 +10,19 @@ class StartNowButtonDesktopTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        locator<NavigationService>().navigateTo(stationListRoute);
-      },
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15) ,
-        decoration: Styles.startNowButtonStyle,
-        child: Text(
-          title,
-          style: Styles.callToAction,
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          locator<NavigationService>().navigateTo(stationListRoute);
+        },
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15) ,
+          decoration: Styles.startNowButtonStyle,
+          child: Text(
+            title,
+            style: Styles.callToAction,
+          ),
         ),
       ),
     );

@@ -10,14 +10,17 @@ class NavigationItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        locator<NavigationService>().navigateTo(navigationPath);
-      },
-      child: Text(
-          title,
-          style: Styles.navItem,
-          textDirection: TextDirection.ltr,
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          locator<NavigationService>().navigateTo(navigationPath);
+        },
+        child: Text(
+            title,
+            style: Styles.navItem,
+            textDirection: TextDirection.ltr,
+        ),
       ),
     );
   }
