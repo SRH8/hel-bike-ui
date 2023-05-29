@@ -16,5 +16,8 @@ jobs:
         with:
           flutter-version: '3.10.0'
           channel: 'stable'
+      - name: Create .env file
+        run: |
+          echo "${{ secrets.ENV_FILE }}" > .env
       - run: flutter pub get
       - run: flutter test
