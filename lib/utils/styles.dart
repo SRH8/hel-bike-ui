@@ -24,10 +24,6 @@ abstract class Styles {
       fontSize: 18
   );
 
-  static const TextStyle imgDescription = TextStyle(
-    fontSize: 12
-  );
-
   static const TextStyle callToAction = TextStyle(
     fontSize: 18,
     color: Colors.white,
