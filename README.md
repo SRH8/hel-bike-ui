@@ -3,7 +3,7 @@
 
 This project is a submission to [Solita Dev Academy 2023](https://github.com/solita/dev-academy-2023-exercise) pre-assignment. It provides a full-stack web application to view information about Helsinki and Espoo's bike stations as well as bike journeys taken in the summer of 2021.
 
-The project consists of a user interface, a [backend service](https://github.com/SRH8/hel-bike-api) to fetch the data and an [extra utility to import the data to a database](https://github.com/SRH8/hel-bike-api). Each of these parts is uploaded in its own repository. I recommend that you also take a look at them before running the user interface, as they contain detailed information about those parts as well as instructions on how to run the backend locally and set up a database. However, running the backend service locally and setting up the database is not necessary (if you wish to only run the UI), as the UI can make use of the live backend.
+The project consists of a user interface, a [backend service](https://github.com/SRH8/hel-bike-api) to fetch the data and an [extra utility to import the data to a database](https://github.com/SRH8/hel-bike-data-import). Each of these parts is uploaded in its own repository. I recommend that you also take a look at them before running the user interface, as they contain detailed information about those parts as well as instructions on how to run the backend locally and set up a database. However, running the backend service locally and setting up the database is not necessary (if you wish to only run the UI), as the UI can make use of the live backend.
 
 
 
