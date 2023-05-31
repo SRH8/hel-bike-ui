@@ -79,7 +79,7 @@ Go to the project directory
 Create .env file in the root directory of the project. It will contain the base url used to fetch the data. If you haven't set up the backend service and database, you can use the live backend URL
 
 ```bash
-BASE_URL=https://helsinki-bike-api-production.up.railway.app
+BASE_URL=helsinki-bike-api-production.up.railway.app
 ```
 
 Otherwise, if you have set up the backend service and database you can use your local ip and port where the service is running. For example:
