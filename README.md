@@ -58,9 +58,9 @@ https://helsinki-bike-app-5ef74.firebaseapp.com/
 
 ## Prerequisites
 
-- Flutter 3.10.0 or newer
+- [Flutter 3.10.0 or newer](https://docs.flutter.dev/get-started/install) 
 - Google Chrome
-- An IDE or text editor (Android Studio, IntelliJ, VS Code) with Dart and Flutter plugins
+- (Optional)[An IDE or text editor](https://docs.flutter.dev/get-started/editor?tab=vscode) (Android Studio, IntelliJ, VS Code) with Dart and Flutter plugins
 ## Running Locally
 
 
