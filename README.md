@@ -1,30 +1,33 @@
 
 # Helsinki Bike App
 
-This project is a submission to [Solita Dev Academy 2023](https://github.com/solita/dev-academy-2023-exercise) pre-assignment. It provides a full-stack web application to view information about Helsinki and Espoo's bike stations as well as bike journeys taken in the summer of 2021.
+This project is a submission to [Solita Dev Academy 2023](https://github.com/solita/dev-academy-2023-exercise) pre-assignment. 
+It provides a full-stack web application to view information about Helsinki and Espoo's bike stations 
+as well as bike journeys taken in the summer of 2021.
 
-The project consists of a user interface, a [backend service](https://github.com/SRH8/hel-bike-api) to fetch the data and an [extra utility to import the data to a database](https://github.com/SRH8/hel-bike-data-import). Each of these parts is uploaded in its own repository. I recommend that you also take a look at them before running the user interface, as they contain detailed information about those parts as well as instructions on how to run the backend locally and set up a database. However, running the backend service locally and setting up the database is not necessary (if you wish to only run the UI), as the UI can make use of the live backend.
-
-
-
-
-
-
-
-
+The project consists of a user interface, a [backend service](https://github.com/SRH8/hel-bike-api) 
+to fetch the data and an [extra utility to import the data to a database](https://github.com/SRH8/hel-bike-data-import).
+Each of these parts is uploaded in its own repository. I recommend that you also take a look at them 
+before running the user interface, as they contain detailed information about those parts as well as 
+instructions on how to run the backend locally and set up a database. However, running the backend service 
+locally and setting up the database is not necessary (if you wish to only run the UI),
+as the UI can make use of the live backend.
 
 ## About the project (UI)
 
-This project was made with [Flutter](https://flutter.dev/), Google's portable UI Framework. Flutter is an open source framework that allows developers to build beautiful, natively compiled, multi-platform applications from a single codebase. Additionally, the application is hosted on [Firebase](https://firebase.google.com/), an app development platform that helps developers build and grow apps and games. Firebase is also backed by Google.
+This project was made with [Flutter](https://flutter.dev/), Google's portable UI Framework. Flutter is an 
+open source framework that allows developers to build beautiful, natively compiled, multi-platform applications 
+from a single codebase. Additionally, the application is hosted on [Firebase](https://firebase.google.com/), 
+an app development platform that helps developers build and grow apps and games. Firebase is also backed by Google.
 
-The main reason why I decided to use Flutter is that I felt it was the tool I was going to get the best result with, as I already had previous experience developing applications with Flutter. Additionally, I wanted the application to be fully responsive and to have different layouts for several devices.
+The main reason why I decided to use Flutter is that I felt it was the tool I was going to get the best result with, 
+as I already had previous experience developing applications with Flutter. Additionally, 
+I wanted the application to be fully responsive and to have different layouts for several devices.
 
 I chose Firebase as the hosting service because it has good compatibility with Flutter, and it is quite quick as well as easy to set up.
-## Demo
 
-An online demo can be found here:
-
-https://helsinki-bike-app-5ef74.firebaseapp.com/
+**_NOTE:_** As of 20/06/2023 the application will not be hosted on the cloud for a while. This was caused by changes on the pricing of my backend provider,
+however it should be back online soon.
 
 
 ## Features
@@ -76,16 +79,12 @@ Go to the project directory
   cd hel-bike-ui
 ```
 
-Create .env file in the root directory of the project. It will contain the base url used to fetch the data. If you haven't set up the backend service and database, you can use the live backend URL
-
-```bash
-BASE_URL=helsinki-bike-api-production.up.railway.app
-```
-
-Otherwise, if you have set up the backend service and database you can use your local ip and port where the service is running. For example:
+Create .env file in the root directory of the project. It will contain the base url used to fetch the data. You can use your local ip and port where the service is running. For example:
 ```
 BASE_URL=192.168.1.1:8080
 ```
+
+**_NOTE:_** you will need to set up and run the [backend service](https://github.com/SRH8/hel-bike-api) to use the application.
 
 Install dependencies
 
